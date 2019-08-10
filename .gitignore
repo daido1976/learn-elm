@@ -8,3 +8,12 @@ elm-stuff
 repl-temp-*
 
 # End of https://www.gitignore.io/api/elm
+
+# Outputs
+index.html
+elm.js
+elm.min.js
+
+# Node
+node_modules/
+npm-debug.log*
