@@ -1,3 +1,3 @@
 # elm-basics
 
-See. [基礎からわかる Elm](https://www.amazon.co.jp/dp/4863542224)
+A repository to practice Elm with reference to [基礎からわかる Elm](https://www.amazon.co.jp/dp/4863542224).
