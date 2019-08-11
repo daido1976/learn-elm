@@ -20,12 +20,12 @@ main =
 
 
 type alias Model =
-    {}
+    { input : String, memos : List String }
 
 
 init : Model
 init =
-    {}
+    { input = "", memos = [] }
 
 
 
@@ -33,12 +33,18 @@ init =
 
 
 type Msg
-    = Msg
+    = Input String
+    | Submit
 
 
 update : Msg -> Model -> Model
 update msg model =
-    model
+    case msg of
+        Input input ->
+            { model | input = input }
+
+        Submit ->
+            { model | input = "", memos = model.input :: model.memos }
 
 
 
@@ -47,4 +53,15 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    text ""
+    div []
+        [ Html.form [ onSubmit Submit ]
+            [ input [ value model.input, onInput Input ] []
+            , button [ disabled (String.length model.input < 1) ] [ text "Submit!" ]
+            ]
+        , ul [] (List.map viewMemo model.memos)
+        ]
+
+
+viewMemo : String -> Html Msg
+viewMemo memo =
+    li [] [ text memo ]
