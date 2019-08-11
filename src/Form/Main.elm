@@ -56,7 +56,7 @@ view model =
     div []
         [ Html.form [ onSubmit Submit ]
             [ input [ value model.input, onInput Input ] []
-            , button [ disabled (String.length model.input < 1) ] [ text "Submit!" ]
+            , button [ disabled (String.isEmpty (String.trim model.input)) ] [ text "Submit!" ]
             ]
         , ul [] (List.map viewMemo model.memos)
         ]
