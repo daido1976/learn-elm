@@ -6,3 +6,4 @@ Learn [Elm](https://elm-lang.org/) with the following materials.
   - https://github.com/jinjor/elm-book
 - https://guide.elm-lang.jp/
 - https://guide.elm-lang.org/
+- https://package.elm-lang.org/
