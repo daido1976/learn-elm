@@ -44,7 +44,7 @@ update msg model =
         Click ->
             ( model
             , Http.get
-                { url = "https://api.github.com/repos/daido1976/elm-basics"
+                { url = "https://api.github.com/repos/daido1976/learn-elm"
                 , expect = Http.expectString GotRepo
                 }
             )

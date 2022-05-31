@@ -1,5 +1,8 @@
-# elm-basics
+# learn-elm
 
-Learn Elm with [基礎からわかる Elm](https://www.amazon.co.jp/dp/4863542224).
+Learn [Elm](https://elm-lang.org/) with the following materials.
 
-ref. https://github.com/jinjor/elm-book
+- [基礎からわかる Elm](https://www.amazon.co.jp/dp/4863542224)
+  - https://github.com/jinjor/elm-book
+- https://guide.elm-lang.jp/
+- https://guide.elm-lang.org/
